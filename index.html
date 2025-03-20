@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+
+*:has(> video.fullscreen) { 
+    position: relative;
+}
+video.fullscreen{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    video.fullscreen{
+        height: auto;
+        width: 100%;
+    }
+}
+
+#slide1-background-holder{
+  background-image:url("images/versaille.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#slide2-background-holder{
+  background-image:url("images/parqueguiel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#slide3-background-holder{
+  background-image:url("images/lol.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+        </style>
+    </head>
+    <body>
+        <header class="position-relative vh-100 d-flex flex-column justify-content-center overflow-hidden">
+            <div class="text-white text-center">
+                <h1 class="display-1">2023 Trip To Europe</h1>
+                <p class="lead">The fond memories live on...</p>
+            </div>
+            <div class="position-absolute w-100 h-100 top-0 start-0 video-holder z-n1">
+                <video class="fullscreen" src="images/fields.mp4"  muted preload loop autoplay></video>
+            </div>
+          </header>
+
+          <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+                    <h4 class="text-center mt-5">From Barcelona to Provance, the photos will last a lifetime!</h4>
+                    <p class="text-center">By Amaralyn Ewey</p>
+                    <p class="text-center mb-5"><time datetime="2025-03-11">March 20th, 2025</time></p>
+                    <p>The summer before transferring from Howard University to Cal, my friend and I took off with just one backpack and headed off to Europe for a month.</p>
+                    <p>Since we both graduated high school during covid (2020/21), we decided we would make up our grad trip in 2023.</p>
+                    <p>We started in Barcelona, and while crowded, the energy of the city was electric.</p>
+                </div>
+            </div>
+        
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10">
+                    <figure>
+                        <div class="ratio ratio-4x3">
+                            <img class="img-fluid" src="images/meow.jpg" width="975" height="550" scrolling="no" frameborder="0"></iframe>
+                        </div>
+                        <figcaption class="figure-caption text-center">Average tourism to Spain by year (courtesy of RoadGenius). </figcaption>
+                    </figure>
+                </div>
+            </div>
+        
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+                    <p>The people of Barcelona were fun, inviting, and cooked the best food.</p>
+                    <p>From the fresh cortados from early in the morning, to the seafood paella in the evening, Barcelona definitely won me over.</p>
+                    <p>Oh, th eplaces we went (Park Güell, Costa Brava, La Sagrada Familia & more)!</p>
+                </div>    
+            </div>
+        
+        </div><!-- close .container -->
+
+        <div class="container-fluid">
+  
+            <!-- slide 1 -->
+            <div class="row justify-content-center">
+          
+              <!-- sticky background holder -->
+              <div id="slide1-background-holder" class="sticky-top z-n1 vh-100"></div>
+          
+              <!-- white text box-->
+              <div class="col-6 bg-light">
+                <p class="m-3">A selfie I took at the bautiful gardens of Versailes, France.</p>
+              </div>
+          
+              <!-- empty div for space on bottom -->
+              <div class="vh-100"></div>
+          
+            </div><!-- close slide1 div -->
+          
+          
+          
+            <!-- slide 2 -->
+            <div class="row">
+              <div id="slide2-background-holder" class="vh-100 sticky-top z-n1"></div>
+              <div class="col-6 offset-1 bg-light">
+                <p class="m-3">Park Güell, Spain-- quite the journey to get there, but SO worth it.</p>
+              </div>
+              <div class="vh-100"></div>
+            </div>
+          
+          
+            <!-- slide 3 -->
+            <div class="row">
+              <div id="slide3-background-holder" class="vh-100 sticky-top z-n1"></div>
+              <div class="col-6 offset-5 bg-light">
+                <p class="m-3">And of course, El Torre Eiffel!</p>
+              </div>
+              <div class="vh-100"></div>
+            </div>
+          
+          </div><!-- close .container -->
+          
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+                <p>After we said goodbye to Spain (Barccelona & Madrid), we made our way over to France where we landed in Provance, pit-stopped through Lion, took a day trip to Marseille, and ended our trip in Paris-- ooo la la!!</p>
+                <p>While Spain was my favorite of the two, France had lots to offer! From the freshly blooming lavender fields in Provance to the beautiful blue waters of Marseille, France, i'll never forget you! </p>
+              </div>
+            </div>
+          </div><!-- close .container -->
+        
+        
+        
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <figure class="col-12 col-md-10 col-lg-8 col-xxl-6">
+                  <div class="ratio ratio-1x1">
+                    <img class="img-fluid" src="images/graph.jpg" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+                  </div>
+                <figcaption class="figure-caption text-center">Average tourism to Spain by year (courtesy of RoadGenius).</figcaption>
+              </figure>
+            </div>
+          </div>
+        
+        
+        
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-8 col-lg-8 col-xxl-6">
+                <p>I enjoyed France, as I was able to drag my friend to all the fictional places taken place in the country (the catacombs from my favorite aedgar Allen Poe short story, The Cask of Amontilado, the Opera Garnier, where Box 5 is reserved for The Phantom of the Opera, and even Château d'lf, the prision from one of my favorite books, The Count of Monte Christo)</p>
+                <p>I'm grateful for the time I got to spend abroad and look forward to the day I get to return to enjoy the passioante Flamenco dancers and the crepe makers outside Notre Dame!</p>
+              </div>
+            </div>
+          </div><!-- close .container -->
+        
+        
+        
+          <!-- bottom footer -->
+          <footer class="container-fluid bg-dark">
+            <div class="row justify-content-center">
+              <div class="col-12 py-5">
+                <p class="text-center text-white">Project by Amaralyn Ewey</p>
+              </div>
+            </div>
+          </footer>
+
+          </div>
+          
+        
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
